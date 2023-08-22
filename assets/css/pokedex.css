@@ -9,27 +9,21 @@
 .normal {
     background-color: #a6a877;
 }
-
 .grass {
     background-color: #77c850;
 }
-
 .fire {
     background-color: #ee7f30;
 }
-
 .water {
     background-color: #678fee;
 }
-
 .electric {
     background-color: #f7cf2e;
 }
-
 .ice {
     background-color: #98d5d7;
 }
-
 .ground {
     background-color: #dfbf69;
 }
@@ -37,43 +31,33 @@
 .flying {
     background-color: #a98ff0;
 }
-
 .poison {
     background-color: #a040a0;
 }
-
 .fighting {
     background-color: #bf3029;
 }
-
 .psychic {
     background-color: #f65687;
 }
-
 .dark {
     background-color: #725847;
 }
-
 .rock {
     background-color: #b8a137;
 }
-
 .bug {
     background-color: #a8b720;
 }
-
 .ghost {
     background-color: #6e5896;
 }
-
 .steel {
     background-color: #b9b7cf;
 }
-
 .dragon {
     background-color: #6f38f6;
 }
-
 .fairy {
     background-color: #f9aec7;
 }
@@ -145,6 +129,100 @@
     background-color: #6c79db;
     border: none;
     border-radius: 1rem;
+}
+
+/*------------PokeTab--------------*/
+
+.pokeTab{
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: #77c850;
+}
+
+.pokeStatus{
+    padding: 2rem 1rem;
+    height: 455px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+.pokeStatus p{
+    padding: 0 1rem;
+}
+
+.icons{
+    padding: 3rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokeStatusTitle{
+    font-size: 2rem;
+    padding: 1rem 1rem 0 1rem;
+    margin: 0;
+}
+
+.pokeID{
+    text-align: right;
+    padding-right: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.tabTypes{
+    list-style-type: none;
+    display: flex;
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+}
+
+.tabTypes li{
+    background-color: #77c850;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: .625rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    padding: 0.25rem 1rem;
+    margin: 0 0.5rem 0 0;
+}
+.boxImagePokeTab{
+    text-align: center;
+}
+
+.pokeTabImage{
+    position: relative;
+    top: 50px;
+}
+
+.pokeListStatus{
+    display: flex;
+}
+.pokeListStatus .pokeStatusDefinition{
+    width: 100px;
+}
+.navStatus{
+    text-align: center;
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+}
+.navStatus li{
+    margin-inline-end: 20px;
+    font-size: 1.1rem;
+}
+.navStatus li:hover{
+    border-bottom: 1px solid black;
+}
+
+.pokeListStatus ol{
+    line-height: 30px;
+    font-size: 1rem;
+    margin: 1rem;
+    list-style: none;
+}
+.pokeStatusDefinition li{
+    opacity: 0.6;
 }
 
 @media screen and (min-width: 380px) {

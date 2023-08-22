@@ -1,6 +1,8 @@
 * {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -13,59 +15,6 @@ body {
     padding: 1rem;
     background-color: #fff;
 }
-
-.pokeTab{
-    border-radius: 1rem;
-    height: 100vh;
-    width: 380px;
-    background-color: #874343;
-}
-
-.pokeStatus{
-    background-color: #6aba5e;
-    height: 28rem;
-    width: 380px;
-    border-radius: 1rem;
-}
-
-.icons{
-    padding: 3rem 1rem 0 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pokeStatusTitle{
-    font-size: 2rem;
-    padding: 1rem 1rem 0 1rem;
-    margin: 0;
-}
-.pokeID{
-    text-align: right;
-    padding-right: 1rem;
-    margin: 0;
-    font-weight: bold;
-}
-
-.tabTypes{
-    list-style-type: none;
-    display: flex;
-    margin: 0 0 1rem 0;
-}
-
-.tabTypes li{
-    text-transform: capitalize;
-    color: #fff;
-    padding: 0.25rem 1rem;
-    margin: 0 0.625rem 0 0;
-    font-size: .625rem;
-    border-radius: 1rem;
-    border: 1px solid black;
-    text-align: center;
-}
-
-
-
-
 
 @media screen and (min-width: 992px) {
     .content {
