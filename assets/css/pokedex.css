@@ -140,8 +140,8 @@
 }
 
 .pokeStatus{
-    padding: 2rem 1rem;
-    height: 455px;
+    padding: 3rem 0.5rem;
+    height: auto;
     background-color: #fff;
     border-radius: 1rem;
 }
@@ -205,10 +205,12 @@
     text-align: center;
     list-style: none;
     display: flex;
-    padding: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
 }
 .navStatus li{
-    margin-inline-end: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    margin-right: 10px;
     font-size: 1.1rem;
 }
 .navStatus li:hover{
@@ -223,6 +225,11 @@
 }
 .pokeStatusDefinition li{
     opacity: 0.6;
+}
+.contentTab{
+    margin: 0 auto;
+    width: 350px;
+    padding: 0.5rem;
 }
 
 @media screen and (min-width: 380px) {
