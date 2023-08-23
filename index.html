@@ -25,79 +25,25 @@
 </head>
 
 <body>
-      <section class="pokeTab">
-        <div class="icons">
-            <i class="fa-solid fa-arrow-left"></i>
-            <i class="fa-regular fa-heart"></i>
-        </div>
-        <h1 class="pokeStatusTitle">Bulbasaur</h1>
-        <p class="pokeID">#1</p>
-        <ol class="tabTypes">    
-            <li>Grass</li>
-            <li>Poison</li>
-        </ol>
-        <div class="boxImagePokeTab">
-            <img class="pokeTabImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="pokeImage">
-        </div>
 
-        <section class="pokeStatus">
-            <ul class="navStatus">
-                <li>About</li>
-                <li>BaseStatus</li>
-                <li>Evolution</li>
-                <li>Moves</li>
-            </ul>
-        <div class="contentTab">
-        <div class="pokeListStatus">
-            <ol class="pokeStatusDefinition">
-                <li>Species</li>
-                <li>Height</li>
-                <li>Weight</li>
-                <li>Abilities</li>
-            </ol>
-            <ol class="pokeStatusData">
-                <li>Seed</li>
-                <li>"2'3,6"(0.70cm)</li>
-                <li>15.2lbs(6.9kg)</li>
-                <li>Overgrow, Chlorophyl</li>
-            </ol>
-        </div>
-        <p>Breeding</p>
-        <div class="pokeListStatus">
-            <ol class="pokeStatusDefinition">
-                <li>Gendar</li>
-                <li>EggGroups</li>
-                <li>EggCycle</li>
-            </ol>
-            <ol class="pokeStatusData">
-                <li>87.5% 12.5%</li>
-                <li>Monster</li>
-                <li>Grass</li>
-            </ol>
-        </div>
-        </div>
-
+    
+    <div class="icons">
+        <i id="backTolist" class="fa-solid fa-arrow-left"></i>
+        <i class="fa-regular fa-heart"></i>
+    </div>
+    <section id="pokeTab" class="pokeTab">
         
-
-        </section>
     </section>  
 
-    <section class="content">
+    <section id="content" class="content">
         <h1>Pokedex</h1>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
     </section>
     
     
-
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
