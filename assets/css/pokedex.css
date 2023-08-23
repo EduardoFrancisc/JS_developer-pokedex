@@ -1,276 +1,275 @@
-.pokemons{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.pokemons {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.pokemons li{
-    border: 1px solid rgba(0, 0, 0, 0);
+.pokemons li {
+  border: 1px solid rgba(0, 0, 0, 0);
 }
-.pokemons li:hover{
-    border: 1px solid rgba(0, 0, 0, 0.5);
+.pokemons li:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .normal {
-    background-color: #a6a877;
+  background-color: #a5a964;
 }
 .grass {
-    background-color: #77c850;
+  background-color: #32de84;
 }
 .fire {
-    background-color: #ee7f30;
+  background-color: #e25822;
 }
 .water {
-    background-color: #678fee;
+  background-color: #1877f2;
 }
 .electric {
-    background-color: #f7cf2e;
+  background-color: #f7cf2e;
 }
 .ice {
-    background-color: #98d5d7;
+  background-color: #1da1f2;
 }
 .ground {
-    background-color: #dfbf69;
+  background-color: #dfbf69;
 }
 .flying {
-    background-color: #a98ff0;
+  background-color: #d8bfd8;
 }
 .poison {
-    background-color: #a040a0;
+  background-color: #a040a0;
 }
 .fighting {
-    background-color: #bf3029;
+  background-color: #e32636;
 }
 .psychic {
-    background-color: #f65687;
+  background-color: #f65687;
 }
 .dark {
-    background-color: #725847;
+  background-color: #725847;
 }
 .rock {
-    background-color: #b8a137;
+  background-color: #ffd700;
 }
 .bug {
-    background-color: #a8b720;
+  background-color: #006a4e;
 }
 .ghost {
-    background-color: #6e5896;
+  background-color: #6e5896;
 }
 .steel {
-    background-color: #b9b7cf;
+  background-color: #b9b7cf;
 }
 .dragon {
-    background-color: #6f38f6;
+  background-color: #720e9e;
 }
 .fairy {
-    background-color: #f9aec7;
+  background-color: #ff69b4;
 }
 
 .pokemon {
-    display: flex;
-    flex-direction: column;
-    margin: .5rem;
-    padding: 1rem;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .pokemon .number {
-    color: #000;
-    opacity: .3;
-    text-align: right;
-    font-size: .625rem;
+  color: #000;
+  opacity: 0.3;
+  text-align: right;
+  font-size: 0.625rem;
 }
 
 .pokemon .name {
-    text-transform: capitalize;
-    color: #fff;
-    margin-bottom: .25rem;
+  text-transform: capitalize;
+  color: #fff;
+  margin-bottom: 0.25rem;
 }
 
 .pokemon .detail {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .pokemon .detail .types {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .pokemon .detail .types .type {
-    text-transform: capitalize;
-    color: #fff;
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    border-radius: 1rem;
-    filter: brightness(1.1);
-    text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.625rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
 }
 
 .pokemon .detail img {
-    margin: 0 auto;
-    height: 70px;
+  margin: 0 auto;
+  height: 70px;
 }
 
 .pagination {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
 
 .pagination button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem 0;
+  font-size: 0.625rem;
+  color: #fff;
+  background-color: #6c79db;
+  border: none;
+  border-radius: 1rem;
 }
 
 /*------------PokeTab--------------*/
 
-.pokeTab{
-    display: none;
-    margin: 0 auto;
-    border-radius: 1rem;
-    background-color: #77c850;
+.pokeMainStatus {
+  padding: 0;
+  display: none;
 }
 
-.pokeStatus{
-    padding: 3rem 0.5rem;
-    height: auto;
-    background-color: #fff;
-    border-radius: 1rem;
-}
-.pokeStatus p{
-    padding: 0 1rem;
+.pokeTab {
+  margin: 0 auto;
+  border-radius: 1rem;
 }
 
-.icons{
-    padding: 1rem 2rem 0.5rem 2rem;
-    background-color: #f6f8fc;
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    display: flex;
-    justify-content: space-between;
+.pokeStatus {
+  padding-top: 1.7rem;
+  height: auto;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.pokeStatus p {
+  padding: 0 1rem;
 }
 
-.pokeStatusTitle{
-    font-size: 2rem;
-    padding: 1rem 1rem 0 1rem;
-    margin: 0;
+.icons {
+  padding: 1rem 2rem 0.5rem 2rem;
+  background-color: #f6f8fc;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.pokeID{
-    text-align: right;
-    padding-right: 1rem;
-    margin: 0;
-    font-weight: bold;
+.pokeStatusTitle {
+  text-transform: capitalize;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0;
 }
 
-.tabTypes{
-    list-style-type: none;
-    display: flex;
-    padding: 0 1rem 1rem 1rem;
-    margin: 0;
+.pokeID {
+  text-align: right;
+  padding-right: 1rem;
+  margin: 0;
+  font-weight: bold;
 }
 
-.tabTypes li{
-    background-color: #77c850;
-    text-transform: capitalize;
-    color: #fff;
-    font-size: .625rem;
-    border-radius: 1rem;
-    filter: brightness(1.1);
-    text-align: center;
-    padding: 0.25rem 1rem;
-    margin: 0 0.5rem 0 0;
-}
-.boxImagePokeTab{
-    text-align: center;
+.tabTypes {
+  list-style-type: none;
+  display: flex;
+  padding: 0 1rem 1rem 1rem;
+  margin: 0;
 }
 
-.pokeTabImage{
-    height: 240px;
-    width: 250px;
-    position: relative;
-    top: 50px;
+.tabTypes li {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 1rem;
+  filter: brightness(1.1);
+  text-align: center;
+  padding: 0.25rem 1rem;
+  margin: 0 0.5rem 0 0;
+}
+.boxImagePokeTab {
+  text-align: center;
 }
 
-.pokeListStatus{
-    display: flex;
-}
-.pokeListStatus .pokeStatusDefinition{
-    width: 100px;
-}
-.navStatus{
-    text-align: center;
-    list-style: none;
-    display: flex;
-    padding: 1rem 0;
-    justify-content: center;
-}
-.navStatus li{
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
-    margin-right: 10px;
-    font-size: 1.1rem;
-}
-.navStatus li:hover{
-    border-bottom: 1px solid black;
+.pokeTabImage {
+  height: 240px;
+  width: 250px;
+  position: relative;
+  top: 20px;
 }
 
-.pokeListStatus ol{
-    line-height: 30px;
-    font-size: 1rem;
-    margin: 1rem;
-    list-style: none;
+.pokeListStatus {
+  display: flex;
 }
-.pokeStatusDefinition li{
-    opacity: 0.6;
+.pokeListStatus .pokeStatusDefinition {
+  width: 100px;
 }
-.contentTab{
-    margin: 0 auto;
-    width: 350px;
-    padding: 0.5rem;
+.navStatus {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.navStatus li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+.navStatus li:hover {
+  border-bottom: 1px solid black;
+}
+
+.pokeListStatus ol {
+  line-height: 30px;
+  font-size: 1rem;
+  margin: 1rem;
+  list-style: none;
+}
+.pokeStatusDefinition li {
+  opacity: 0.6;
+}
+.contentTab {
+  margin: 0 auto;
+  width: 350px;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 320px) {
-    .pokemons {
-        grid-template-columns: 1fr;
-    }
-    .pokeTab{
-        width: 100%;
-        margin: 0 auto;
-    }
+  .pokemons {
+    grid-template-columns: 1fr;
+  }
+  .pokeTab {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .pokemons {
-        grid-template-columns: 1fr 1fr;
-    }
+  .pokemons {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-/*@media only screen and (min-width: 768px){}*/
-    
 @media screen and (min-width: 992px) {
-    .icons{
-        width: 992px;
-    }
-    .pokeTab{
-    margin: 0 auto;
-    background-color: #77c850;
+  .icons {
     width: 992px;
-    }
-    .pokemons {
+  }
+  .pokeTab {
+    margin: 0 auto;
+    width: 992px;
+  }
+  .pokemons {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
+  }
 }

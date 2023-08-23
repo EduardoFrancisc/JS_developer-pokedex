@@ -6,7 +6,6 @@ const seta = document.getElementById("backTolist");
 const limit = 151;
 let offset = 0;
 
-
 seta.addEventListener("click", () => {
   pokeTab.style.display = "none";
   mainList.style.display = "block";
@@ -34,57 +33,60 @@ function convertPokemonToLi(pokemon) {
 
 function convertPokemonToStatusTab(pokemon) {
   return `
-  <h1 class="pokeStatusTitle">${pokemon.name}</h1>
-        <p class="pokeID">#${pokemon.number}</p>
-        <ol class="tabTypes">    
-            ${pokemon.types
-              .map((type) => `<li class="type ${type}">${type}</li>`)
-              .join("")}
-        </ol>
-        <div class="boxImagePokeTab">
-            <img class="pokeTabImage" src="${pokemon.photo}" alt="${
+  <section class="pokeTab ${pokemon.type}">
+    <h1 class="pokeStatusTitle">${pokemon.name}</h1>
+          <p class="pokeID">#${pokemon.number}</p>
+          <ol class="tabTypes ${pokemon.type}">    
+              ${pokemon.types
+                .map((type) => `<li class="type ${type}">${type}</li>`)
+                .join("")}
+          </ol>
+          <div class="boxImagePokeTab">
+              <img class="pokeTabImage" src="${pokemon.photo}" alt="${
     pokemon.name
   }">
-        </div>
+          </div>
 
-        <section class="pokeStatus">
-            <ul class="navStatus">
-                <li>About</li>
-                <li>BaseStatus</li>
-                <li>Evolution</li>
-                <li>Moves</li>
-            </ul>
-        <div class="contentTab">
-        <div class="pokeListStatus">
-        <ol class="pokeStatusDefinition">
-            <li>Species</li>
-            <li>Height</li>
-            <li>Weight</li>
-            <li>Abilities</li>
-        </ol>
-        <ol class="pokeStatusData">
-            <li>Seed</li>
-            <li>"2'3,6"(0.70cm)</li>
-            <li>15.2lbs(6.9kg)</li>
-            <li>Overgrow, Chlorophyl</li>
-        </ol>
-        </div>
-        <p>Breeding</p>
-        <div class="pokeListStatus">
-        <ol class="pokeStatusDefinition">
-            <li>Gendar</li>
-            <li>EggGroups</li>
-            <li>EggCycle</li>
-        </ol>
-        <ol class="pokeStatusData">
-            <li>87.5% 12.5%</li>
-            <li>Monster</li>
-            <li>Grass</li>
-        </ol>
-    </div>
-    </div>
-    </section>
-`;
+          <section class="pokeStatus">
+              <ul class="navStatus">
+                  <li>About</li>
+              </ul>
+          <div class="contentTab">
+          <div class="pokeListStatus">
+          <ol class="pokeStatusDefinition">
+              <li>Height</li>
+              <li>Weight</li>
+              <li>Abilities</li>
+          </ol>
+          <ol class="pokeStatusData">
+              <li>${pokemon.height}</li>
+              <li>${pokemon.weight}</li>
+              <li>${pokemon.abilities
+                .map((ability) => `<li class="type">${ability}</li>`)
+                .join("")}
+          </ol>
+          </div>
+          <p>Stats</p>
+          <div class="pokeListStatus">
+          <ol class="pokeStatusDefinition">
+              <li>HP</li>
+              <li>Attack</li>
+              <li>Defense</li>
+              <li>SpecialAttack</li>
+              <li>Speed</li>
+          </ol>
+          <ol class="pokeStatusData">
+              <li>${pokemon.hp}</li>
+              <li>${pokemon.attack}</li>
+              <li>${pokemon.defense}</li>
+              <li>${pokemon.specialAttack}</li>
+              <li>${pokemon.speed}</li>
+
+          </ol>
+      </div>
+      </div>
+      </section>
+    </section>`;
 }
 
 function loadPokemonItens(offset, limit) {
@@ -103,17 +105,3 @@ function loadPokemonItens(offset, limit) {
 }
 
 loadPokemonItens(offset, limit);
-
-loadMoreButton.addEventListener("click", () => {
-  offset += limit;
-  const qtdRecordsWithNexPage = offset + limit;
-
-  if (qtdRecordsWithNexPage >= maxRecords) {
-    const newLimit = maxRecords - offset;
-    loadPokemonItens(offset, newLimit);
-
-    loadMoreButton.parentElement.removeChild(loadMoreButton);
-  } else {
-    loadPokemonItens(offset, limit);
-  }
-});
